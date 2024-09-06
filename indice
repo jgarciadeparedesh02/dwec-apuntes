@@ -1,0 +1,50 @@
+1. Selección de arquitecturas y herramientas de programación:
+- Mecanismos de ejecución de código en un navegador web.
+- Capacidades y limitaciones de ejecución.
+- Lenguajes de programación en entorno cliente. Características.
+- Tecnologías y lenguajes asociados.
+- Integración del código con las etiquetas HTML. Código en línea y en ficheros externos.
+- Entornos y herramientas de desarrollo de código en el cliente web.
+
+2. Manejo de la sintaxis del lenguaje:
+- Variables. Declaración. Inicialización. Ámbito.
+- Tipos de datos. Conversión de tipos de datos.
+- Asignaciones.
+- Operadores.
+- Comentarios al código.
+- Sentencias.
+- Decisiones. Sentencias condicionales.
+- Bucles. Tipos. Sentencias de ruptura de bucle.
+
+3. Utilización de los objetos predefinidos del lenguaje:
+- Utilización de objetos. Objetos nativos del lenguaje.
+- Interacción con el navegador. Objetos predefinidos asociados.
+- Generación de texto y elementos HTML desde código.
+- Aplicaciones prácticas de los marcos.
+- Gestión de la apariencia de la ventana.
+- Creación de nuevas ventanas. Comunicación entre ventanas.
+- Cookies. Definición, creación, almacenamiento y recuperación.
+
+4. Programación con “arrays”, funciones y objetos definidos por el usuario:
+- Funciones predefinidas del lenguaje.
+- Llamadas a funciones. Definición de funciones.
+- “Arrays”. Definición, creación y uso.
+- Creación de objetos.
+- Definición de métodos y propiedades.
+5. Interacción con el usuario: eventos y formularios:
+- Modelo de gestión de eventos.
+- Utilización de formularios desde código.
+- Modificación de apariencia y comportamiento.
+- Validación y envío.
+- Expresiones regulares.
+6. Utilización del modelo de objetos del documento (DOM):
+- El modelo de objetos del documento (DOM).
+- Objetos del modelo. Propiedades y métodos de los objetos.
+- Acceso al documento desde código.
+- Programación de eventos.
+- Diferencias en las implementaciones del modelo.
+7. Utilización de mecanismos de comunicación asíncrona:
+- Mecanismos de comunicación asíncrona.
+- Modificación dinámica del documento utilizando comunicación asíncrona.
+- Formatos para el envío y recepción de información.
+- Librerías de actualización dinámica.
