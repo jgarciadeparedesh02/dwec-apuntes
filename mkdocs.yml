@@ -1,6 +1,6 @@
 site_name: Desarrollo Web en Entorno Cliente
 nav:
-  - "Inicio": "inicio.md"
+  - "Inicio": "index.md"
   - "Planificación": "planificacion.md"
   - "UT 1. Selección de arquitecturas y herramientas de programación":  
     - "1. Desarrollo de Software": "ut1-seleccionarquitecturasyherramientasprogramacion/1desarrollodesoftware.md"
@@ -21,6 +21,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
 plugins:
   - search:
