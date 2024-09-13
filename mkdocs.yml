@@ -47,3 +47,5 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Quitar modo oscuro
+extra_css:
+  - stylesheets/extra.css
