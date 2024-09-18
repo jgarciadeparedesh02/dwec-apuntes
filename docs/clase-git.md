@@ -65,7 +65,6 @@ Asegúrate de que el mensaje de tu commit sea **descriptivo**. Por ejemplo, `git
 1. **Crea un Nuevo Repositorio en GitHub**:
    - Ve a GitHub, inicia sesión y haz clic en **New repository**.
    - Dale un nombre y elige si será público o privado. ¡No olvides iniciar el repo sin un README si ya tienes uno local! 📝
-
 2. **Vincula tu Repositorio Local al Remoto**:
 
    Copia la URL del repositorio que acabas de crear en GitHub y usa el siguiente comando:
@@ -97,7 +96,7 @@ Aquí tienes un diagrama visual de cómo se ve el flujo de trabajo típico en Gi
 5. **Subir Cambios** (`git push`)
 
 ```plaintext
-(Trabaja en tu Proyecto) 
+(Trabaja en tu Proyecto)
         |
       git init
         |
