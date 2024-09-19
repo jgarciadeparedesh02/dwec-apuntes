@@ -2,15 +2,23 @@ site_name: Desarrollo Web en Entorno Cliente
 nav:
   - "Inicio": "index.md"
   - "Planificación": "planificacion.md"
-  - "UT 1. Selección de arquitecturas y herramientas de programación":  
-    - "1. Desarrollo de Software": "ut1-seleccionarquitecturasyherramientasprogramacion/1desarrollodesoftware.md"
-    - "2. Tipos de aplicaciones": "ut1-seleccionarquitecturasyherramientasprogramacion/2tiposdeaplicaciones.md"
-    - "3. Desarrollo de aplicaciones Web": "ut1-seleccionarquitecturasyherramientasprogramacion/3desarrollodeaplicacionesweb.md"
-    - "4. Entorno de desarrollo": "ut1-seleccionarquitecturasyherramientasprogramacion/4entornodedesarrollo.md"
-    - "5. Integrar código JavaScript en HTML": "ut1-seleccionarquitecturasyherramientasprogramacion/5integrarcodigojsenhtml.md"
-    - "6. Recursos y FAQ": "ut1-seleccionarquitecturasyherramientasprogramacion/6recursosyfaq.md"
+  - "UT 1. Selección de arquitecturas y herramientas de programación":
+      - "1. Desarrollo de Software": "ut1-seleccionarquitecturasyherramientasprogramacion/1desarrollodesoftware.md"
+      - "2. Tipos de aplicaciones": "ut1-seleccionarquitecturasyherramientasprogramacion/2tiposdeaplicaciones.md"
+      - "3. Desarrollo de aplicaciones Web": "ut1-seleccionarquitecturasyherramientasprogramacion/3desarrollodeaplicacionesweb.md"
+      - "4. Entorno de desarrollo": "ut1-seleccionarquitecturasyherramientasprogramacion/4entornodedesarrollo.md"
+      - "5. Integrar código JavaScript en HTML": "ut1-seleccionarquitecturasyherramientasprogramacion/5integrarcodigojsenhtml.md"
+      - "6. Recursos y FAQ": "ut1-seleccionarquitecturasyherramientasprogramacion/6recursosyfaq.md"
   - "UT 2. Manejo de la sintaxis del lenguaje":
-    - "1. Variables": "ut2-manejo-de-la-sintaxis-del-lenguaje/1variables.md"
+      - "1. Variables": "ut2-manejo-de-la-sintaxis-del-lenguaje/1variables.md"
+      - "2. Tipos de Datos": "ut2-manejo-de-la-sintaxis-del-lenguaje/2tiposdedatosyconversiones.md"
+      - "3. Asignaciones": "ut2-manejo-de-la-sintaxis-del-lenguaje/3asignaciones.md"
+      - "4. Operadores": "ut2-manejo-de-la-sintaxis-del-lenguaje/4operadores.md"
+      - "5. Comentarios": "ut2-manejo-de-la-sintaxis-del-lenguaje/5comentarios.md"
+      - "6. Condicionales": "ut2-manejo-de-la-sintaxis-del-lenguaje/6condicionales.md"
+      - "7. Bucles": "ut2-manejo-de-la-sintaxis-del-lenguaje/7bucles.md"
+      - "8. Recursos y FAQ": "ut2-manejo-de-la-sintaxis-del-lenguaje/8recursosyfaq.md"
+
 markdown_extensions:
   - admonition
   - attr_list
