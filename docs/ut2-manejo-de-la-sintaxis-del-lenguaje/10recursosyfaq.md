@@ -55,6 +55,53 @@ graph TD
     E --> F[¡Felicidades! 🎉]
 ```
 
+### 📥 Guía para Leer Variables por Consola en JavaScript
+
+Cuando trabajamos con JavaScript en entornos de línea de comandos, es común necesitar capturar entradas del usuario. Para esto, podemos usar la librería `readline-sync`, que permite interactuar fácilmente con el usuario desde la consola.
+
+#### 🛠️ Instalación de `readline-sync`
+
+Antes de comenzar, es necesario instalar la librería usando npm:
+
+```bash
+npm install readline-sync
+```
+
+#### 🚀 Ejemplo de Uso de `readline-sync`
+
+A continuación, te muestro un ejemplo básico de cómo usar `readline-sync` para capturar la entrada del usuario:
+
+```javascript
+// Importamos la librería readline-sync
+var readlineSync = require('readline-sync');
+
+// Esperamos la respuesta del usuario.
+var userName = readlineSync.question('¿Puedo conocer tu nombre? ');
+console.log('Hi ' + userName + '!');
+
+// Manejo de texto secreto (por ejemplo, contraseñas).
+var favFood = readlineSync.question('¿Cuál es tu comida favorita? ', {
+    hideEchoBack: true // El texto introducido se oculta en pantalla.
+});
+console.log('¡A ' + userName + ' le gusta ' + favFood + '!');
+```
+
+#### 📖 Explicación del Código
+
+1. **Instalación**: `readline-sync` se instala ejecutando el comando `npm install readline-sync`.
+2. **Importación de la Librería**: Utilizamos `require('readline-sync')` para importar la librería y poder usar sus funcionalidades.
+3. **Captura de Datos**: 
+   - `question()` se usa para mostrar un mensaje y capturar la respuesta del usuario.
+   - En el ejemplo, pedimos el nombre del usuario y lo saludamos.
+4. **Entrada Oculta**:
+   - La opción `{ hideEchoBack: true }` se usa para ocultar lo que escribe el usuario, útil para contraseñas o información sensible.
+
+#### 🔧 Aplicaciones Comunes
+
+- **Captura de Datos en Aplicaciones CLI**: Ideal para aplicaciones de línea de comandos que requieren interacción del usuario.
+- **Formularios y Encuestas Simples**: Se puede usar para crear formularios simples y recopilar datos sin una interfaz gráfica.
+- **Prototipos y Pruebas Rápidas**: Útil para prototipar rápidamente funciones que requieren entrada del usuario.
+
 ### ❓ Preguntas Frecuentes sobre JavaScript
 
 **1. ¿Qué es JavaScript?**  

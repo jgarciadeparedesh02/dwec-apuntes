@@ -17,7 +17,9 @@ nav:
       - "5. Comentarios": "ut2-manejo-de-la-sintaxis-del-lenguaje/5comentarios.md"
       - "6. Condicionales": "ut2-manejo-de-la-sintaxis-del-lenguaje/6condicionales.md"
       - "7. Bucles": "ut2-manejo-de-la-sintaxis-del-lenguaje/7bucles.md"
-      - "8. Recursos y FAQ": "ut2-manejo-de-la-sintaxis-del-lenguaje/8recursosyfaq.md"
+      - "8. Funciones": "ut2-manejo-de-la-sintaxis-del-lenguaje/8funciones.md"
+      - "9. Clases": "ut2-manejo-de-la-sintaxis-del-lenguaje/9clases.md"
+      - "10. Recursos y FAQ": "ut2-manejo-de-la-sintaxis-del-lenguaje/10recursosyfaq.md"
 
 markdown_extensions:
   - admonition
