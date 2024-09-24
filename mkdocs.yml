@@ -18,8 +18,9 @@ nav:
       - "6. Condicionales": "ut2-manejo-de-la-sintaxis-del-lenguaje/6condicionales.md"
       - "7. Bucles": "ut2-manejo-de-la-sintaxis-del-lenguaje/7bucles.md"
       - "8. Funciones": "ut2-manejo-de-la-sintaxis-del-lenguaje/8funciones.md"
-      - "9. Clases": "ut2-manejo-de-la-sintaxis-del-lenguaje/9clases.md"
-      - "10. Recursos y FAQ": "ut2-manejo-de-la-sintaxis-del-lenguaje/10recursosyfaq.md"
+      - "9. Objetos y Arrays": "ut2-manejo-de-la-sintaxis-del-lenguaje/9objetosyarrays.md"
+      - "10. Clases": "ut2-manejo-de-la-sintaxis-del-lenguaje/10clases.md"
+      - "11. Recursos y FAQ": "ut2-manejo-de-la-sintaxis-del-lenguaje/11recursosyfaq.md"
 
 markdown_extensions:
   - admonition
