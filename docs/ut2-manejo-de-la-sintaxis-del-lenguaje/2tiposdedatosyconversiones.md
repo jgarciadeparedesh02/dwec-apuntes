@@ -116,6 +116,54 @@ let colores = ["rojo", "verde", "azul"];
 console.log(colores); // Output: [ 'rojo', 'verde', 'azul' ]
 ```
 
+
+#### 🔹 `Date` (Fechas)
+
+El tipo `Date` en JavaScript se utiliza para manejar fechas y horas, permitiéndote crear, manipular y formatear fechas fácilmente. 
+
+##### Principales Operaciones con `Date`
+- **Crear una Fecha Actual**
+    Para obtener la fecha y hora actuales, puedes usar el constructor `Date()` sin parámetros.
+
+    ```javascript
+    let fechaActual = new Date();
+    console.log(fechaActual); // Output: fecha y hora actuales
+    ```
+
+- **Crear una Fecha Específica**
+   Puedes crear una fecha específica pasando una cadena de texto o valores de año, mes, día, etc.
+
+   ```javascript
+   let fechaEspecifica = new Date('2023-09-27');
+   console.log(fechaEspecifica); // Output: Wed Sep 27 2023
+   ```
+
+- **Obtener Partes de la Fecha**
+   Usa métodos como `getFullYear()`, `getMonth()`, `getDate()`, `getDay()` para extraer partes específicas de la fecha.
+
+   ```javascript
+   let anio = fechaActual.getFullYear();
+   let mes = fechaActual.getMonth(); // Nota: Enero es 0
+   let dia = fechaActual.getDate();
+   console.log(`Año: ${anio}, Mes: ${mes + 1}, Día: ${dia}`); // Output: Año, Mes y Día
+   ```
+
+- **Modificar Fechas**
+   Puedes modificar una fecha usando métodos `setFullYear()`, `setMonth()`, `setDate()`, entre otros.
+
+   ```javascript
+   fechaActual.setFullYear(2025);
+   console.log(fechaActual); // Output: Nueva fecha con año modificado a 2025
+   ```
+   
+- **Formatear Fechas**
+   Usa `toLocaleDateString()` o `toISOString()` para mostrar fechas en formatos específicos.
+
+   ```javascript
+   console.log(fechaActual.toLocaleDateString()); // Output: formato local de la fecha
+   console.log(fechaActual.toISOString()); // Output: formato ISO 8601
+   ```
+
 ### 🛠️ Conversión de Tipos de Datos
 
 La **conversión de tipos** (type casting) es el proceso de cambiar un tipo de dato a otro. Esto es útil cuando necesitas manipular datos de diferentes formas en tu programa.
