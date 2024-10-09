@@ -24,6 +24,12 @@ nav:
   - "UT 3. Objetos predefinidos del lenguaje": 
       - "1. Introducción a los Objetos Predefinidos": "ut3-objetos-predefinidos-del-lenguaje/1introduccion.md"
       - "2. Objetos Nativos del Lenguaje": "ut3-objetos-predefinidos-del-lenguaje/2objetosnativosdellenguaje.md"
+      - "3. Interacción con el Navegador": "ut3-objetos-predefinidos-del-lenguaje/3interaccionconelnavegador.md"
+      - "4. Generación de HTML desde código": "ut3-objetos-predefinidos-del-lenguaje/4generaciondehtmldesdecodigo.md"
+      - "5. Aplicaciones Prácticas de los Marcos": "ut3-objetos-predefinidos-del-lenguaje/5aplicacionespracticasdelosmarcos.md"
+      - "6. Gestión de la apariencia de la ventana": "ut3-objetos-predefinidos-del-lenguaje/6gestiondelaaparienciadelaventana.md"
+      - "7. Creación de ventanas y comunicación": "ut3-objetos-predefinidos-del-lenguaje/7nuevasventanasycomunicacion.md"
+      - "8. Cookies": "ut3-objetos-predefinidos-del-lenguaje/8cookies.md"
 
 markdown_extensions:
   - admonition
