@@ -1,4 +1,7 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
+
     const list = document.getElementById('dynamic-list');
     const button = document.getElementById('add-item-btn');
     let counter = 1;
@@ -16,4 +19,5 @@ document.addEventListener('DOMContentLoaded', function () {
         // Incrementar el contador
         counter++;
     });
+
 });
