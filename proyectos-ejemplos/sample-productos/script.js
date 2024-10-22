@@ -122,7 +122,13 @@ productos.forEach(producto => {
     const descripcionElemento = document.createElement("p");
     descripcionElemento.textContent = producto.descripcion;
 
+    const srcUrl = "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg"
+    const imagen = document.createElement("img");
+    imagen.src = srcUrl;
+    // Crear un contenedor para la imagen
+
     // Agregar los elementos creados al contenedor del producto
+    productoDiv.appendChild(imagen);
     productoDiv.appendChild(nombreElemento);
     productoDiv.appendChild(precioElemento);
     productoDiv.appendChild(descripcionElemento);
