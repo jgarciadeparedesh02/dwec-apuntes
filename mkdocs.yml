@@ -30,6 +30,7 @@ nav:
       - "6. Gestión de la apariencia de la ventana": "ut3-objetos-predefinidos-del-lenguaje/6gestiondelaaparienciadelaventana.md"
       - "7. Creación de ventanas y comunicación": "ut3-objetos-predefinidos-del-lenguaje/7nuevasventanasycomunicacion.md"
       - "8. Cookies": "ut3-objetos-predefinidos-del-lenguaje/8cookies.md"
+      - "9. Drag and Drop": "ut3-objetos-predefinidos-del-lenguaje/9draganddrop.md"
 
 markdown_extensions:
   - admonition
