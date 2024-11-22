@@ -1,4 +1,4 @@
-# Enunciado de la Tarea: Arrastra las Palabras a sus Categorías**
+# Enunciado de la Tarea: Arrastra las Palabras a sus Categorías
 
 **Descripción de la Actividad:**  
 En esta actividad, deberás clasificar correctamente una serie de palabras en sus categorías correspondientes. Contarás con tres categorías: "Frutas", "Animales" y "Colores". Tu tarea es arrastrar cada palabra y soltarla en la categoría adecuada.
