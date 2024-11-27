@@ -1,5 +1,9 @@
+// Archivo: script.js
+
 const POKEMON_1_HEALTH_COOKIE = 'pokemon1Health';
 const POKEMON_2_HEALTH_COOKIE = 'pokemon2Health';
+const CRITICAL_HIT_PROBABILITY = 0.1;
+const MISS_PROBABILITY = 0.1;
 
 let pokemon1Health = 100;
 let pokemon2Health = 100;
@@ -9,6 +13,8 @@ const pokemon1HealthBar = document.getElementById('pokemon1-health');
 const pokemon2HealthBar = document.getElementById('pokemon2-health');
 const attackButton = document.getElementById('attack-button');
 const healButton = document.getElementById('heal-button');
+const resetButton = document.getElementById('reset-button');
+const resultMessage = document.getElementById('result-message');
 
 function loadPokemonData() {
     const pokemon1 = getPokemonFromCookie('selectedPokemon');
@@ -46,29 +52,80 @@ function addLogMessage(message) {
     const newMessage = document.createElement('p');
     newMessage.textContent = message;
     logMessages.appendChild(newMessage);
-    logMessages.scrollTop = logMessages.scrollHeight; // Mantener el scroll abajo
+    logMessages.scrollTop = logMessages.scrollHeight;
 }
 
 function attack() {
-    const damage = Math.floor(Math.random() * 20) + 10;
-    pokemon2Health = Math.max(0, pokemon2Health - damage);
-    addLogMessage(`Pikachu ataca a Charmander y causa ${damage} de daño.`);
-    updateHealthBar(2, pokemon2Health);
-    setCookie(POKEMON_2_HEALTH_COOKIE, pokemon2Health, 1); // Guardar salud en cookies
-    checkForWin();
+    const playerPokemonName = JSON.parse(getCookie('selectedPokemon')).name;
+    const machinePokemonName = JSON.parse(getCookie('opponentPokemon')).name;
+
+    if (Math.random() < MISS_PROBABILITY) {
+        addLogMessage(`${playerPokemonName} falla el ataque.`);
+    } else {
+        let damage = Math.floor(Math.random() * 15) + 5;
+        if (Math.random() < CRITICAL_HIT_PROBABILITY) {
+            damage *= 2;
+            addLogMessage(`¡Golpe crítico! ${playerPokemonName} hace ${damage} de daño.`);
+        } else {
+            addLogMessage(`${playerPokemonName} ataca a ${machinePokemonName} y causa ${damage} de daño.`);
+        }
+
+        pokemon2Health = Math.max(0, pokemon2Health - damage);
+        updateHealthBar(2, pokemon2Health);
+        setCookie(POKEMON_2_HEALTH_COOKIE, pokemon2Health, 1);
+        checkForWin();
+    }
+
+    if (pokemon2Health > 0) {
+        setTimeout(machineAttack, 300);  // La máquina ataca después de un segundo
+    }
+}
+
+function machineAttack() {
+    const playerPokemonName = JSON.parse(getCookie('selectedPokemon')).name;
+    const machinePokemonName = JSON.parse(getCookie('opponentPokemon')).name;
+
+    if (Math.random() < MISS_PROBABILITY) {
+        addLogMessage(`${machinePokemonName} falla el ataque.`);
+    } else {
+        let damage = Math.floor(Math.random() * 15) + 5;
+        if (Math.random() < CRITICAL_HIT_PROBABILITY) {
+            damage *= 2;
+            addLogMessage(`¡Golpe crítico! ${machinePokemonName} hace ${damage} de daño.`);
+        } else {
+            addLogMessage(`${machinePokemonName} ataca a ${playerPokemonName} y causa ${damage} de daño.`);
+        }
+
+        pokemon1Health = Math.max(0, pokemon1Health - damage);
+        updateHealthBar(1, pokemon1Health);
+        setCookie(POKEMON_1_HEALTH_COOKIE, pokemon1Health, 1);
+        checkForWin();
+    }
 }
 
 function heal() {
+    const playerPokemonName = JSON.parse(getCookie('selectedPokemon')).name;
     const healAmount = Math.floor(Math.random() * 15) + 5;
     pokemon1Health = Math.min(100, pokemon1Health + healAmount);
-    addLogMessage(`Pikachu se cura ${healAmount} puntos de vida.`);
+    addLogMessage(`${playerPokemonName} se cura ${healAmount} puntos de vida.`);
     updateHealthBar(1, pokemon1Health);
-    setCookie(POKEMON_1_HEALTH_COOKIE, pokemon1Health, 1); // Guardar salud en cookies
+    setCookie(POKEMON_1_HEALTH_COOKIE, pokemon1Health, 1);
+
+    if (pokemon2Health > 0) {
+        setTimeout(machineAttack, 1000);  // La máquina ataca después de un segundo
+    }
 }
 
 function checkForWin() {
+    const playerPokemonName = JSON.parse(getCookie('selectedPokemon')).name;
+    const machinePokemonName = JSON.parse(getCookie('opponentPokemon')).name;
+
     if (pokemon2Health === 0) {
-        addLogMessage('¡Pikachu gana el combate!');
+        resultMessage.textContent = `¡${playerPokemonName} gana el combate!`;
+        attackButton.disabled = true;
+        healButton.disabled = true;
+    } else if (pokemon1Health === 0) {
+        resultMessage.textContent = `¡${machinePokemonName} gana el combate!`;
         attackButton.disabled = true;
         healButton.disabled = true;
     }
@@ -94,8 +151,15 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
+function resetGame() {
+    setCookie(POKEMON_1_HEALTH_COOKIE, 100, 1);
+    setCookie(POKEMON_2_HEALTH_COOKIE, 100, 1);
+    location.reload();
+}
+
 loadPokemonData();
 
 attackButton.addEventListener('click', attack);
 healButton.addEventListener('click', heal);
+resetButton.addEventListener('click', resetGame);
 

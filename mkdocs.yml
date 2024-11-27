@@ -31,6 +31,9 @@ nav:
       - "7. Creación de ventanas y comunicación": "ut3-objetos-predefinidos-del-lenguaje/7nuevasventanasycomunicacion.md"
       - "8. Cookies": "ut3-objetos-predefinidos-del-lenguaje/8cookies.md"
       - "9. Drag and Drop": "ut3-objetos-predefinidos-del-lenguaje/9draganddrop.md"
+  - "UT 4. Programación con arrays, funciones y objetos definidos por el usuario":
+      - "1. Programación con arrays": "ut4-programacion-arrays-funciones-objetos-usuarios/1-programacion-con-arrays.md"
+      - "Prácticas y tareas": "ut4-programacion-arrays-funciones-objetos-usuarios/z-practicas-y-tareas.md"
 
 markdown_extensions:
   - admonition

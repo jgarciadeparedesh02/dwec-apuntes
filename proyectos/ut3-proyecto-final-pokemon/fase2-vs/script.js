@@ -44,6 +44,7 @@ function loadDataInPage() {
 
     console.log(`¡Empieza la batalla entre ${pokemon1.name} y ${pokemon2.name}!`);
 
+    document.getElementById('pokemon1-img').src = pokemon1.img;
     if (pokemon1.isShiny) {
         document.getElementById('pokemon1-img').src = pokemon1.img.replace('normal-sprite', 'shiny-sprite');
     }
@@ -58,5 +59,5 @@ function startBattle() {
     window.location.href = '/proyectos/ut3-proyecto-final-pokemon/fase3-combate/';
 }
 
-loadDataInPage();
+window.onload = loadDataInPage();
 document.getElementById('start-battle').addEventListener('click', startBattle);
