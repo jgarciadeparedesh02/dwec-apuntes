@@ -34,6 +34,7 @@ nav:
   - "UT 4. Programación con arrays, funciones y objetos definidos por el usuario":
       - "1. Programación con arrays": "ut4-programacion-arrays-funciones-objetos-usuarios/1-programacion-con-arrays.md"
       - "Prácticas y tareas": "ut4-programacion-arrays-funciones-objetos-usuarios/z-practicas-y-tareas.md"
+      - "Tareas con Matrices": "ut4-programacion-arrays-funciones-objetos-usuarios/zz-ejercicios-con-matrices.md"
 
 markdown_extensions:
   - admonition
